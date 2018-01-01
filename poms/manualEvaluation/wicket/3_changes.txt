@@ -1,0 +1,8 @@
+OLD: 3_0_old[919619bee56072a7a35a1b7a65e057a76123f09a]_pom.xml (/Users/chris/Documents/workspaceBuildChangeDifferVariants/semantic-differ/differ-maven-evaluation-tools/outputFolder/wicket/3_0_old[919619bee56072a7a35a1b7a65e057a76123f09a]_pom.xml)
+NEW: 3_1_new[4f75e452eb6a5f9e4a04f01bf74bf591f836ac85]_pom.xml (/Users/chris/Documents/workspaceBuildChangeDifferVariants/semantic-differ/differ-maven-evaluation-tools/outputFolder/wicket/3_1_new[4f75e452eb6a5f9e4a04f01bf74bf591f836ac85]_pom.xml)
+
+
+CHANGES: 
+========================
+MavenBuildChange [name=PROJECT_ARTIFACTID_UPDATE]
+MavenBuildChange [name=PLUGIN_VERSION_UPDATE]

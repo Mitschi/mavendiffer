@@ -1,0 +1,7 @@
+OLD: 6_0_old[7c8b5a720716d781bbd92d486ef9fba34e6d81c1]_pom.xml (/Users/chris/Documents/workspaceBuildChangeDifferVariants/semantic-differ/differ-maven-evaluation-tools/outputFolder/karaf/6_0_old[7c8b5a720716d781bbd92d486ef9fba34e6d81c1]_pom.xml)
+NEW: 6_1_new[89bbd1d8c0363a09c4c5109712b480685457eaa5]_pom.xml (/Users/chris/Documents/workspaceBuildChangeDifferVariants/semantic-differ/differ-maven-evaluation-tools/outputFolder/karaf/6_1_new[89bbd1d8c0363a09c4c5109712b480685457eaa5]_pom.xml)
+
+
+CHANGES: 
+========================
+MavenBuildChange [name=GENERAL_PROPERTY_UPDATE]

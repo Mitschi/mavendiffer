@@ -1,0 +1,6 @@
+OLD: 4_0_old[edcec4b6feddbbfbd2d927d9039806dae381a495]_pom.xml (/Users/chris/Documents/workspaceBuildChangeDifferVariants/semantic-differ/differ-maven-evaluation-tools/outputFolder/hibernate-search/4_0_old[edcec4b6feddbbfbd2d927d9039806dae381a495]_pom.xml)
+NEW: 4_1_new[7c0340953f10ec083334df0d836534f97fb98844]_pom.xml (/Users/chris/Documents/workspaceBuildChangeDifferVariants/semantic-differ/differ-maven-evaluation-tools/outputFolder/hibernate-search/4_1_new[7c0340953f10ec083334df0d836534f97fb98844]_pom.xml)
+
+
+CHANGES: 
+========================

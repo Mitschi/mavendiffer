@@ -1,0 +1,9 @@
+OLD: 0_0_old[47ea8ecf5d32bacbfd1e14120b5451ca808ebc56]_pom.xml (/Users/chris/Documents/workspaceBuildChangeDifferVariants/semantic-differ/differ-maven-evaluation-tools/outputFolder/activemq/0_0_old[47ea8ecf5d32bacbfd1e14120b5451ca808ebc56]_pom.xml)
+NEW: 0_1_new[35b8ea9308bc9b303a2ed652aca041b11e66a175]_pom.xml (/Users/chris/Documents/workspaceBuildChangeDifferVariants/semantic-differ/differ-maven-evaluation-tools/outputFolder/activemq/0_1_new[35b8ea9308bc9b303a2ed652aca041b11e66a175]_pom.xml)
+
+
+CHANGES: 
+========================
+MavenBuildChange [name=DEPENDENCY_INSERT]
+MavenBuildChange [name=DEPENDENCY_UPDATE]
+MavenBuildChange [name=DEPENDENCY_UPDATE]

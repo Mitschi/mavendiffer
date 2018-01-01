@@ -1,0 +1,7 @@
+OLD: 9_0_old[06027af8e11e7a4c5bde50d7d174b523539c9d73]_pom.xml (/Users/chris/Documents/workspaceBuildChangeDifferVariants/semantic-differ/differ-maven-evaluation-tools/outputFolder/wicket/9_0_old[06027af8e11e7a4c5bde50d7d174b523539c9d73]_pom.xml)
+NEW: 9_1_new[dab4dac177249c6db6a169890cc72e9b9b6ca6b9]_pom.xml (/Users/chris/Documents/workspaceBuildChangeDifferVariants/semantic-differ/differ-maven-evaluation-tools/outputFolder/wicket/9_1_new[dab4dac177249c6db6a169890cc72e9b9b6ca6b9]_pom.xml)
+
+
+CHANGES: 
+========================
+MavenBuildChange [name=DEPENDENCY_VERSION_UPDATE]

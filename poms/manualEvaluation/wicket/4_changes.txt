@@ -1,0 +1,6 @@
+OLD: 4_0_old[f1e0daf42432e0a73f59499bcda92734fcda2375]_pom.xml (/Users/chris/Documents/workspaceBuildChangeDifferVariants/semantic-differ/differ-maven-evaluation-tools/outputFolder/wicket/4_0_old[f1e0daf42432e0a73f59499bcda92734fcda2375]_pom.xml)
+NEW: 4_1_new[722e007b00a0c1c7ffd492800b01db0b0baf2501]_pom.xml (/Users/chris/Documents/workspaceBuildChangeDifferVariants/semantic-differ/differ-maven-evaluation-tools/outputFolder/wicket/4_1_new[722e007b00a0c1c7ffd492800b01db0b0baf2501]_pom.xml)
+
+
+CHANGES: 
+========================

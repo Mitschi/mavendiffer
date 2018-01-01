@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0">
+
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>at.aau</groupId>
+	<artifactId>testartifact</artifactId>
+	<version>1.0-SNAPSHOT</version>
+	<packaging>pom</packaging>
+	<name>Test</name>
+	<description>TestDesc</description>
+
+	<properties>
+		<prop1>valueProp1</prop1>
+	</properties>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>x.y.z</groupId>
+				<artifactId>bla-plugin</artifactId>
+				<version>4.1</version>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jar-plugin</artifactId>
+				<version>2.6</version>
+				<configuration>
+					<classifier>test</classifier>
+					<someThing>true</someThing>
+					<stopNow>false</stopNow>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+	<dependencies>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.12</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.google.guava</groupId>
+			<artifactId>guava</artifactId>
+			<version>19.0</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-io</groupId>
+			<artifactId>commons-io</artifactId>
+			<version>2.4</version>
+		</dependency>
+	</dependencies>
+
+</project>

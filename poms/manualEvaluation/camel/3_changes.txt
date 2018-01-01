@@ -1,0 +1,6 @@
+OLD: 3_0_old[b4c97d79410587176577e918381922784f1e0b25]_pom.xml (/Users/chris/Documents/workspaceBuildChangeDifferVariants/semantic-differ/differ-maven-evaluation-tools/outputFolder/camel/3_0_old[b4c97d79410587176577e918381922784f1e0b25]_pom.xml)
+NEW: 3_1_new[e5c0cd00c055e5bbf3f436cbbd18e3c1c2fdafd7]_pom.xml (/Users/chris/Documents/workspaceBuildChangeDifferVariants/semantic-differ/differ-maven-evaluation-tools/outputFolder/camel/3_1_new[e5c0cd00c055e5bbf3f436cbbd18e3c1c2fdafd7]_pom.xml)
+
+
+CHANGES: 
+========================

@@ -1,0 +1,7 @@
+OLD: 5_0_old[2106c8bec89b18f2733e9f269aff86b9b136f9f9]_pom.xml (/Users/chris/Documents/workspaceBuildChangeDifferVariants/semantic-differ/differ-maven-evaluation-tools/outputFolder/hadoop/5_0_old[2106c8bec89b18f2733e9f269aff86b9b136f9f9]_pom.xml)
+NEW: 5_1_new[5f69497e355b7f6639d740965658e3ed1d9f95c4]_pom.xml (/Users/chris/Documents/workspaceBuildChangeDifferVariants/semantic-differ/differ-maven-evaluation-tools/outputFolder/hadoop/5_1_new[5f69497e355b7f6639d740965658e3ed1d9f95c4]_pom.xml)
+
+
+CHANGES: 
+========================
+MavenBuildChange [name=DEPENDENCY_VERSION_UPDATE]

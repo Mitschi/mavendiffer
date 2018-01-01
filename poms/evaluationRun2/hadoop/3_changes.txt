@@ -1,0 +1,4 @@
+MavenBuildChange [name=REPOSITORY_DELETE]
+MavenBuildChange [name=REPOSITORY_DELETE]
+MavenBuildChange [name=DEPENDENCY_UPDATE]
+MavenBuildChange [name=DEPENDENCY_UPDATE]

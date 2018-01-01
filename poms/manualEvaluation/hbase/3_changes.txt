@@ -1,0 +1,7 @@
+OLD: 3_0_old[a06597e34aca16f553406cc7f3663f1fc456816c]_pom.xml (/Users/chris/Documents/workspaceBuildChangeDifferVariants/semantic-differ/differ-maven-evaluation-tools/outputFolder/hbase/3_0_old[a06597e34aca16f553406cc7f3663f1fc456816c]_pom.xml)
+NEW: 3_1_new[430060332d5c12321f5e1b5d97d590269768a563]_pom.xml (/Users/chris/Documents/workspaceBuildChangeDifferVariants/semantic-differ/differ-maven-evaluation-tools/outputFolder/hbase/3_1_new[430060332d5c12321f5e1b5d97d590269768a563]_pom.xml)
+
+
+CHANGES: 
+========================
+MavenBuildChange [name=GENERAL_PROPERTY_UPDATE]

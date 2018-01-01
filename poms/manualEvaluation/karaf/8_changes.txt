@@ -1,0 +1,8 @@
+OLD: 8_0_old[14cad9e0325e827c8edfec31e120574d8bd7a595]_pom.xml (/Users/chris/Documents/workspaceBuildChangeDifferVariants/semantic-differ/differ-maven-evaluation-tools/outputFolder/karaf/8_0_old[14cad9e0325e827c8edfec31e120574d8bd7a595]_pom.xml)
+NEW: 8_1_new[320503f9a091389652bff862e71c2e923f3fef50]_pom.xml (/Users/chris/Documents/workspaceBuildChangeDifferVariants/semantic-differ/differ-maven-evaluation-tools/outputFolder/karaf/8_1_new[320503f9a091389652bff862e71c2e923f3fef50]_pom.xml)
+
+
+CHANGES: 
+========================
+MavenBuildChange [name=DEPENDENCY_INSERT]
+MavenBuildChange [name=DEPENDENCY_INSERT]

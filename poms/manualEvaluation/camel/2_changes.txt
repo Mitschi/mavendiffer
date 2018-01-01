@@ -1,0 +1,7 @@
+OLD: 2_0_old[882857fa9cc058c880db3e55061e2409cf8370b3]_pom.xml (/Users/chris/Documents/workspaceBuildChangeDifferVariants/semantic-differ/differ-maven-evaluation-tools/outputFolder/camel/2_0_old[882857fa9cc058c880db3e55061e2409cf8370b3]_pom.xml)
+NEW: 2_1_new[f261f610ddf4f7b2abc472d455d01caa8413cb00]_pom.xml (/Users/chris/Documents/workspaceBuildChangeDifferVariants/semantic-differ/differ-maven-evaluation-tools/outputFolder/camel/2_1_new[f261f610ddf4f7b2abc472d455d01caa8413cb00]_pom.xml)
+
+
+CHANGES: 
+========================
+MavenBuildChange [name=MODULE_INSERT]

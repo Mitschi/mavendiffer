@@ -1,0 +1,7 @@
+OLD: 7_0_old[e86d6d945585337a87bb92419a257beefab1bff7]_pom.xml (/Users/chris/Documents/workspaceBuildChangeDifferVariants/semantic-differ/differ-maven-evaluation-tools/outputFolder/hibernate-search/7_0_old[e86d6d945585337a87bb92419a257beefab1bff7]_pom.xml)
+NEW: 7_1_new[225344e435895169fb104a6798d18e08e877a931]_pom.xml (/Users/chris/Documents/workspaceBuildChangeDifferVariants/semantic-differ/differ-maven-evaluation-tools/outputFolder/hibernate-search/7_1_new[225344e435895169fb104a6798d18e08e877a931]_pom.xml)
+
+
+CHANGES: 
+========================
+MavenBuildChange [name=GENERAL_PROPERTY_UPDATE]

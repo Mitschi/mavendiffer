@@ -1,0 +1,7 @@
+OLD: 4_0_old[81327fd1aa387ed275124e65b073332f02b61caa]_pom.xml (/Users/chris/Documents/workspaceBuildChangeDifferVariants/semantic-differ/differ-maven-evaluation-tools/outputFolder/spring-roo/4_0_old[81327fd1aa387ed275124e65b073332f02b61caa]_pom.xml)
+NEW: 4_1_new[87b1f9d723e5fb25419e8f99149ae536475a7758]_pom.xml (/Users/chris/Documents/workspaceBuildChangeDifferVariants/semantic-differ/differ-maven-evaluation-tools/outputFolder/spring-roo/4_1_new[87b1f9d723e5fb25419e8f99149ae536475a7758]_pom.xml)
+
+
+CHANGES: 
+========================
+MavenBuildChange [name=MODULE_INSERT]

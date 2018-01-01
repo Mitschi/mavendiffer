@@ -1,0 +1,7 @@
+OLD: 5_0_old[a3578eb91beb7ae2ae2938b46af2a9ea25abe283]_pom.xml (/Users/chris/Documents/workspaceBuildChangeDifferVariants/semantic-differ/differ-maven-evaluation-tools/outputFolder/activemq/5_0_old[a3578eb91beb7ae2ae2938b46af2a9ea25abe283]_pom.xml)
+NEW: 5_1_new[b65fd2710907863e6faa53de1a4b0acb963dbc49]_pom.xml (/Users/chris/Documents/workspaceBuildChangeDifferVariants/semantic-differ/differ-maven-evaluation-tools/outputFolder/activemq/5_1_new[b65fd2710907863e6faa53de1a4b0acb963dbc49]_pom.xml)
+
+
+CHANGES: 
+========================
+MavenBuildChange [name=PLUGIN_CONFIGURATION_UPDATE]

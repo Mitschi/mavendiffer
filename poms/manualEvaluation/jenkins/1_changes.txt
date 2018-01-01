@@ -1,0 +1,6 @@
+OLD: 1_0_old[1a48b12f46fc80484a25557a3e609c1cdf39ed4b]_pom.xml (/Users/chris/Documents/workspaceBuildChangeDifferVariants/semantic-differ/differ-maven-evaluation-tools/outputFolder/jenkins/1_0_old[1a48b12f46fc80484a25557a3e609c1cdf39ed4b]_pom.xml)
+NEW: 1_1_new[b06abc8e8cbb4aa9c53721cca08d3fccc1e329d6]_pom.xml (/Users/chris/Documents/workspaceBuildChangeDifferVariants/semantic-differ/differ-maven-evaluation-tools/outputFolder/jenkins/1_1_new[b06abc8e8cbb4aa9c53721cca08d3fccc1e329d6]_pom.xml)
+
+
+CHANGES: 
+========================

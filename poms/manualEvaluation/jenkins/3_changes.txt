@@ -1,0 +1,7 @@
+OLD: 3_0_old[b1024d749376c9d909ffcb91992a1745806b2cf8]_pom.xml (/Users/chris/Documents/workspaceBuildChangeDifferVariants/semantic-differ/differ-maven-evaluation-tools/outputFolder/jenkins/3_0_old[b1024d749376c9d909ffcb91992a1745806b2cf8]_pom.xml)
+NEW: 3_1_new[c498c0f6a740c6f4b6e90e2af90d7904b3709b8a]_pom.xml (/Users/chris/Documents/workspaceBuildChangeDifferVariants/semantic-differ/differ-maven-evaluation-tools/outputFolder/jenkins/3_1_new[c498c0f6a740c6f4b6e90e2af90d7904b3709b8a]_pom.xml)
+
+
+CHANGES: 
+========================
+MavenBuildChange [name=DEPENDENCY_VERSION_UPDATE]

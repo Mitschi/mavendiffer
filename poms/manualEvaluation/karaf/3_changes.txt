@@ -1,0 +1,7 @@
+OLD: 3_0_old[60c0f820953a95c2e08f0475789af20d041ff849]_pom.xml (/Users/chris/Documents/workspaceBuildChangeDifferVariants/semantic-differ/differ-maven-evaluation-tools/outputFolder/karaf/3_0_old[60c0f820953a95c2e08f0475789af20d041ff849]_pom.xml)
+NEW: 3_1_new[7373515e77fc9ab19e32526dcb7c545af471c5d6]_pom.xml (/Users/chris/Documents/workspaceBuildChangeDifferVariants/semantic-differ/differ-maven-evaluation-tools/outputFolder/karaf/3_1_new[7373515e77fc9ab19e32526dcb7c545af471c5d6]_pom.xml)
+
+
+CHANGES: 
+========================
+MavenBuildChange [name=PLUGIN_CONFIGURATION_UPDATE]

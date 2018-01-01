@@ -1,0 +1,7 @@
+OLD: 8_0_old[b757e28ba9b125ffff8c1fd31f56c4566cba02ec]_pom.xml (/Users/chris/Documents/workspaceBuildChangeDifferVariants/semantic-differ/differ-maven-evaluation-tools/outputFolder/jenkins/8_0_old[b757e28ba9b125ffff8c1fd31f56c4566cba02ec]_pom.xml)
+NEW: 8_1_new[16f287772910820fea2d50ceda620f7180f6ce79]_pom.xml (/Users/chris/Documents/workspaceBuildChangeDifferVariants/semantic-differ/differ-maven-evaluation-tools/outputFolder/jenkins/8_1_new[16f287772910820fea2d50ceda620f7180f6ce79]_pom.xml)
+
+
+CHANGES: 
+========================
+MavenBuildChange [name=PARENT_VERSION_UPDATE]

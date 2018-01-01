@@ -1,0 +1,7 @@
+OLD: 7_0_old[65f35fa002d7369237dcac2dd88bc7f2e3a196ce]_pom.xml (/Users/chris/Documents/workspaceBuildChangeDifferVariants/semantic-differ/differ-maven-evaluation-tools/outputFolder/wildfly/7_0_old[65f35fa002d7369237dcac2dd88bc7f2e3a196ce]_pom.xml)
+NEW: 7_1_new[f0d5c1cbbafc96567f054c99e74e18ddd1201131]_pom.xml (/Users/chris/Documents/workspaceBuildChangeDifferVariants/semantic-differ/differ-maven-evaluation-tools/outputFolder/wildfly/7_1_new[f0d5c1cbbafc96567f054c99e74e18ddd1201131]_pom.xml)
+
+
+CHANGES: 
+========================
+MavenBuildChange [name=GENERAL_PROPERTY_UPDATE]

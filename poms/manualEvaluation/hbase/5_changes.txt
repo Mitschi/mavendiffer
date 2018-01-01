@@ -1,0 +1,10 @@
+OLD: 5_0_old[3f385c2e2462d9fe805cf18ba1f98fd2a562bf97]_pom.xml (/Users/chris/Documents/workspaceBuildChangeDifferVariants/semantic-differ/differ-maven-evaluation-tools/outputFolder/hbase/5_0_old[3f385c2e2462d9fe805cf18ba1f98fd2a562bf97]_pom.xml)
+NEW: 5_1_new[098022ef70a5c18180214bbf89d40413a04809d4]_pom.xml (/Users/chris/Documents/workspaceBuildChangeDifferVariants/semantic-differ/differ-maven-evaluation-tools/outputFolder/hbase/5_1_new[098022ef70a5c18180214bbf89d40413a04809d4]_pom.xml)
+
+
+CHANGES: 
+========================
+MavenBuildChange [name=REPOSITORY_UPDATE]
+MavenBuildChange [name=REPOSITORY_UPDATE]
+MavenBuildChange [name=REPOSITORY_UPDATE]
+MavenBuildChange [name=REPOSITORY_UPDATE]

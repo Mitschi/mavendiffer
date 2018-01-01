@@ -1,0 +1,10 @@
+OLD: 0_0_old[d5193d13f6fe3827120cb3df13035aded367089a]_pom.xml (/Users/chris/Documents/workspaceBuildChangeDifferVariants/semantic-differ/differ-maven-evaluation-tools/outputFolder/camel/0_0_old[d5193d13f6fe3827120cb3df13035aded367089a]_pom.xml)
+NEW: 0_1_new[a81db57cde62a4349af4db60d5e038fea5b7a316]_pom.xml (/Users/chris/Documents/workspaceBuildChangeDifferVariants/semantic-differ/differ-maven-evaluation-tools/outputFolder/camel/0_1_new[a81db57cde62a4349af4db60d5e038fea5b7a316]_pom.xml)
+
+
+CHANGES: 
+========================
+MavenBuildChange [name=DEPENDENCY_INSERT]
+MavenBuildChange [name=GENERAL_PROPERTY_INSERT]
+MavenBuildChange [name=DEPENDENCY_VERSION_UPDATE]
+MavenBuildChange [name=PLUGIN_CONFIGURATION_UPDATE]

@@ -1,0 +1,7 @@
+OLD: 0_0_old[44078d1e547998d7faf284be73cd1dd879b7537a]_pom.xml (/Users/chris/Documents/workspaceBuildChangeDifferVariants/semantic-differ/differ-maven-evaluation-tools/outputFolder/wicket/0_0_old[44078d1e547998d7faf284be73cd1dd879b7537a]_pom.xml)
+NEW: 0_1_new[4efb34cc733b36939ed594cab1578b96a19c0123]_pom.xml (/Users/chris/Documents/workspaceBuildChangeDifferVariants/semantic-differ/differ-maven-evaluation-tools/outputFolder/wicket/0_1_new[4efb34cc733b36939ed594cab1578b96a19c0123]_pom.xml)
+
+
+CHANGES: 
+========================
+MavenBuildChange [name=SCM_CONNECTION_UPDATE]

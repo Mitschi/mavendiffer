@@ -1,0 +1,4 @@
+MavenBuildChange [name=PLUGIN_DEPENDENCY_INSERT]
+MavenBuildChange [name=PLUGIN_DEPENDENCY_INSERT]
+MavenBuildChange [name=PLUGIN_CONFIGURATION_UPDATE]
+MavenBuildChange [name=PLUGIN_CONFIGURATION_UPDATE]

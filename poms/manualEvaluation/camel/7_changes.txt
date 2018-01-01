@@ -1,0 +1,7 @@
+OLD: 7_0_old[68e09794437d52601a2b219c078bbabc0b6b8f2f]_pom.xml (/Users/chris/Documents/workspaceBuildChangeDifferVariants/semantic-differ/differ-maven-evaluation-tools/outputFolder/camel/7_0_old[68e09794437d52601a2b219c078bbabc0b6b8f2f]_pom.xml)
+NEW: 7_1_new[c1a428f89d706e01fe0cf9e56042643ac25daf92]_pom.xml (/Users/chris/Documents/workspaceBuildChangeDifferVariants/semantic-differ/differ-maven-evaluation-tools/outputFolder/camel/7_1_new[c1a428f89d706e01fe0cf9e56042643ac25daf92]_pom.xml)
+
+
+CHANGES: 
+========================
+MavenBuildChange [name=GENERAL_PROPERTY_UPDATE]

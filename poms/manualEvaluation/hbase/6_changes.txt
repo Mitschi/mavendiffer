@@ -1,0 +1,7 @@
+OLD: 6_0_old[6f542792e3093e426837fb1910f21b1a962f78f8]_pom.xml (/Users/chris/Documents/workspaceBuildChangeDifferVariants/semantic-differ/differ-maven-evaluation-tools/outputFolder/hbase/6_0_old[6f542792e3093e426837fb1910f21b1a962f78f8]_pom.xml)
+NEW: 6_1_new[efe471f74b0aab2a807fdd606af256d8eebe3f25]_pom.xml (/Users/chris/Documents/workspaceBuildChangeDifferVariants/semantic-differ/differ-maven-evaluation-tools/outputFolder/hbase/6_1_new[efe471f74b0aab2a807fdd606af256d8eebe3f25]_pom.xml)
+
+
+CHANGES: 
+========================
+MavenBuildChange [name=DEPENDENCY_INSERT]

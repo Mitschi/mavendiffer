@@ -1,0 +1,2 @@
+MavenBuildChange [name=PLUGIN_CONFIGURATION_UPDATE]
+MavenBuildChange [name=GENERAL_PROPERTY_UPDATE]

@@ -1,0 +1,11 @@
+OLD: 9_0_old[944967bca09fbd3ebf91eac5fcf64f885fc5f303]_pom.xml (/Users/chris/Documents/workspaceBuildChangeDifferVariants/semantic-differ/differ-maven-evaluation-tools/outputFolder/camel/9_0_old[944967bca09fbd3ebf91eac5fcf64f885fc5f303]_pom.xml)
+NEW: 9_1_new[772124aab674f1081a5839fe22ec57758bd88eac]_pom.xml (/Users/chris/Documents/workspaceBuildChangeDifferVariants/semantic-differ/differ-maven-evaluation-tools/outputFolder/camel/9_1_new[772124aab674f1081a5839fe22ec57758bd88eac]_pom.xml)
+
+
+CHANGES: 
+========================
+MavenBuildChange [name=REPOSITORY_INSERT]
+MavenBuildChange [name=DEPENDENCY_DELETE]
+MavenBuildChange [name=DEPENDENCY_UPDATE]
+MavenBuildChange [name=DEPENDENCY_UPDATE]
+MavenBuildChange [name=DEPENDENCY_UPDATE]

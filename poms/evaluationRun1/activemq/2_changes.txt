@@ -1,0 +1,1 @@
+MavenBuildChange [name=PARENT_VERSION_UPDATE]

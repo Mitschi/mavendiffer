@@ -1,0 +1,8 @@
+OLD: 1_0_old[5fce119685c9b2db1afb7189dc7bbf631b2933ac]_pom.xml (/Users/chris/Documents/workspaceBuildChangeDifferVariants/semantic-differ/differ-maven-evaluation-tools/outputFolder/hbase/1_0_old[5fce119685c9b2db1afb7189dc7bbf631b2933ac]_pom.xml)
+NEW: 1_1_new[1fab626bc722d2a39c0563279a89b6b58afe85c0]_pom.xml (/Users/chris/Documents/workspaceBuildChangeDifferVariants/semantic-differ/differ-maven-evaluation-tools/outputFolder/hbase/1_1_new[1fab626bc722d2a39c0563279a89b6b58afe85c0]_pom.xml)
+
+
+CHANGES: 
+========================
+MavenBuildChange [name=PLUGIN_VERSION_UPDATE]
+MavenBuildChange [name=PLUGIN_CONFIGURATION_UPDATE]

@@ -1,0 +1,7 @@
+OLD: 3_0_old[837f6a8d7c897201e79f21f9fff323ff5d4446da]_pom.xml (/Users/chris/Documents/workspaceBuildChangeDifferVariants/semantic-differ/differ-maven-evaluation-tools/outputFolder/hibernate-search/3_0_old[837f6a8d7c897201e79f21f9fff323ff5d4446da]_pom.xml)
+NEW: 3_1_new[201ee1e41c860abc47c3d959f0f121973446faac]_pom.xml (/Users/chris/Documents/workspaceBuildChangeDifferVariants/semantic-differ/differ-maven-evaluation-tools/outputFolder/hibernate-search/3_1_new[201ee1e41c860abc47c3d959f0f121973446faac]_pom.xml)
+
+
+CHANGES: 
+========================
+MavenBuildChange [name=DEPENDENCY_UPDATE]

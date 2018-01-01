@@ -1,0 +1,3 @@
+MavenBuildChange [name=MODULE_INSERT]
+MavenBuildChange [name=MODULE_DELETE]
+MavenBuildChange [name=MODULE_UPDATE]

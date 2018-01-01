@@ -1,0 +1,8 @@
+OLD: 2_0_old[b204062c4be72a274b01e41f43995695b4567335]_pom.xml (/Users/chris/Documents/workspaceBuildChangeDifferVariants/semantic-differ/differ-maven-evaluation-tools/outputFolder/wildfly/2_0_old[b204062c4be72a274b01e41f43995695b4567335]_pom.xml)
+NEW: 2_1_new[42749b70cef0958159c660b14d957b85a78fb633]_pom.xml (/Users/chris/Documents/workspaceBuildChangeDifferVariants/semantic-differ/differ-maven-evaluation-tools/outputFolder/wildfly/2_1_new[42749b70cef0958159c660b14d957b85a78fb633]_pom.xml)
+
+
+CHANGES: 
+========================
+MavenBuildChange [name=REPOSITORY_DELETE]
+MavenBuildChange [name=GENERAL_PROPERTY_UPDATE]

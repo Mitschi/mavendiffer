@@ -1,0 +1,7 @@
+OLD: 9_0_old[f2733a26eca8ffca54f0c614868fcd261fb5cd48]_pom.xml (/Users/chris/Documents/workspaceBuildChangeDifferVariants/semantic-differ/differ-maven-evaluation-tools/outputFolder/activemq/9_0_old[f2733a26eca8ffca54f0c614868fcd261fb5cd48]_pom.xml)
+NEW: 9_1_new[d28be4dfb4e64ecd85158d3f129261fd6b8b0130]_pom.xml (/Users/chris/Documents/workspaceBuildChangeDifferVariants/semantic-differ/differ-maven-evaluation-tools/outputFolder/activemq/9_1_new[d28be4dfb4e64ecd85158d3f129261fd6b8b0130]_pom.xml)
+
+
+CHANGES: 
+========================
+MavenBuildChange [name=REPOSITORY_DELETE]

@@ -1,0 +1,10 @@
+OLD: 7_0_old[ddef6a062eca41dd78774d8ace0f9bf095045f84]_pom.xml (/Users/chris/Documents/workspaceBuildChangeDifferVariants/semantic-differ/differ-maven-evaluation-tools/outputFolder/hadoop/7_0_old[ddef6a062eca41dd78774d8ace0f9bf095045f84]_pom.xml)
+NEW: 7_1_new[36c8624924bd5a2aee6d14b27d85467a6b1b8857]_pom.xml (/Users/chris/Documents/workspaceBuildChangeDifferVariants/semantic-differ/differ-maven-evaluation-tools/outputFolder/hadoop/7_1_new[36c8624924bd5a2aee6d14b27d85467a6b1b8857]_pom.xml)
+
+
+CHANGES: 
+========================
+MavenBuildChange [name=PLUGIN_DELETE]
+MavenBuildChange [name=GENERAL_PROPERTY_INSERT]
+MavenBuildChange [name=PLUGIN_CONFIGURATION_UPDATE]
+MavenBuildChange [name=PLUGIN_CONFIGURATION_UPDATE]

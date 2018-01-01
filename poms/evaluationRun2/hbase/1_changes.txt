@@ -1,0 +1,3 @@
+MavenBuildChange [name=DEPENDENCY_INSERT]
+MavenBuildChange [name=PROJECT_VERSION_UPDATE]
+MavenBuildChange [name=GENERAL_PROPERTY_UPDATE]

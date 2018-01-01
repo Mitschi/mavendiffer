@@ -1,0 +1,7 @@
+OLD: 8_0_old[fe9369fb3c8d1490bf03b10ac4d07e67f1a34e24]_pom.xml (/Users/chris/Documents/workspaceBuildChangeDifferVariants/semantic-differ/differ-maven-evaluation-tools/outputFolder/hadoop/8_0_old[fe9369fb3c8d1490bf03b10ac4d07e67f1a34e24]_pom.xml)
+NEW: 8_1_new[2f0489edab5436fc313f60edfeef76521abbee31]_pom.xml (/Users/chris/Documents/workspaceBuildChangeDifferVariants/semantic-differ/differ-maven-evaluation-tools/outputFolder/hadoop/8_1_new[2f0489edab5436fc313f60edfeef76521abbee31]_pom.xml)
+
+
+CHANGES: 
+========================
+MavenBuildChange [name=PLUGIN_VERSION_UPDATE]

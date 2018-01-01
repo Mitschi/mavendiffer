@@ -1,0 +1,2 @@
+MavenBuildChange [name=PLUGIN_VERSION_UPDATE]
+MavenBuildChange [name=PLUGIN_DEPENDENCY_VERSION_UPDATE]

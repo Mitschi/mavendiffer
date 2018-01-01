@@ -1,0 +1,367 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>org.jvnet.hudson.main</groupId>
+    <artifactId>pom</artifactId>
+    <version>1.91-SNAPSHOT</version>
+    <relativePath>../pom.xml</relativePath>
+  </parent>
+  
+  <artifactId>hudson-core</artifactId>
+  <packaging>jar</packaging>
+  <name>Hudson core</name>
+  
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.kohsuke.stapler</groupId>
+        <artifactId>maven-stapler-plugin</artifactId>
+        <executions>
+          <execution>
+            <goals>
+              <goal>stapler</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+      <plugin>
+        <artifactId>maven-antlr-plugin</artifactId>
+        <configuration>
+          <sourceDirectory>${basedir}/src/main/grammar</sourceDirectory>
+          <grammars>crontab.g</grammars>
+        </configuration>
+        <executions>
+          <execution>
+            <goals>
+              <goal>generate</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+      <!--
+        Generate retrotranslated 1.4 jar "on the side". I tried various approaches like
+        "profile" (like http://testng.googlecode.com/svn/trunk/pom.xml), but in the
+        end using Ant seems to be the easiest.
+      -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-antrun-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>create14jar</id>
+            <phase>package</phase>
+            <configuration>
+              <tasks>
+                <taskdef name="retrotranslator" classpathref="maven.test.classpath" classname="net.sf.retrotranslator.transformer.RetrotranslatorTask" />
+                <mkdir dir="target/classes14" />
+                
+                <!-- pick up the manfiest -->
+                <unjar src="target/${artifactId}-${version}.jar" dest="target">
+                  <patternset>
+                    <include name="META-INF/MANIFEST.MF" />
+                  </patternset>
+                </unjar>
+                
+                <retrotranslator destdir="target/classes14"><!-- verify="true" detects false-positive errors against some references to remoting-->
+                  <src path="target/classes" />
+                </retrotranslator>
+                <jar basedir="target/classes14" destfile="target/${artifactId}-${version}-jdk14.jar" manifest="target/META-INF/MANIFEST.MF" />
+              </tasks>
+            </configuration>
+            <goals>
+              <goal>run</goal>
+            </goals>
+          </execution>
+          <execution>
+            <phase>generate-resources</phase>
+            <configuration>
+              <tasks>
+                <tstamp>
+                  <format property="now" pattern="MM/dd/yyyy hh:mm" unit="hour" />
+                </tstamp>
+                <property name="build.version" value="${version} (private-${now}-${user.name})" /><!-- default to release version -->
+                <!-- put the version file -->
+                <echo message="The build id is: ${build.version}" />
+                <mkdir dir="target/classes/hudson" />
+                <echo file="target/classes/hudson/hudson-version.properties">version=${build.version}
+                </echo>
+                <mkdir dir="target/classes14/hudson" />
+                <echo file="target/classes14/hudson/hudson-version.properties">version=${build.version}
+                </echo>
+              </tasks>
+            </configuration>
+            <goals>
+              <goal>run</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+      <!--
+        Attach the generated 1.4 jar to the build so that it gets deployed to the repo.
+      -->
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>build-helper-maven-plugin</artifactId>
+        <executions>
+          <execution>
+            <id>attach-artifacts</id>
+            <phase>package</phase>
+            <goals>
+              <goal>attach-artifact</goal>
+            </goals>
+            <configuration>
+              <artifacts>
+                <artifact>
+                  <file>target/${artifactId}-${version}-jdk14.jar</file>
+                  <type>jar</type>
+                  <classifier>jdk14</classifier>
+                </artifact>
+              </artifacts>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+      <!-- set main class -->
+      <plugin>
+        <artifactId>maven-jar-plugin</artifactId>
+        <configuration>
+          <archive>
+            <manifest>
+              <mainClass>hudson.Main</mainClass>
+              <addClasspath>true</addClasspath>
+              <classpathPrefix />
+            </manifest>
+          </archive>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+
+  <profiles>
+    <profile>
+      <id>debug</id>
+      <activation>
+        <activeByDefault>true</activeByDefault>
+      </activation>
+      <dependencies>
+        <dependency>
+          <groupId>org.jvnet.hudson.main</groupId>
+          <artifactId>remoting</artifactId>
+          <version>${version}</version>
+        </dependency>
+      </dependencies>
+    </profile>
+    <profile>
+      <id>release</id>
+      <build>
+        <plugins>
+          <!--
+            To build the remoting and core modules both retrotranslated
+            (and still while writing the core code with generics),
+            it is necessary to build both in one compilation. So in
+            the release mode, we add the remoting source tree as a part
+            of the core.
+            
+            Instead, in the debug profile we depends on the separately built remoting module,
+            so that IDEs won't get confused with "duplicate code"
+          -->
+          <plugin>
+            <groupId>org.codehaus.mojo</groupId>
+            <artifactId>build-helper-maven-plugin</artifactId>
+            <configuration>
+              <sources>
+                <source>../remoting/src/main/java</source>
+              </sources>
+            </configuration>
+            <executions>
+              <execution>
+                <goals>
+                  <goal>add-source</goal>
+                </goals>
+              </execution>
+            </executions>
+          </plugin>
+          <!-- run retrotranslator only during the release, so that debug build gets faster -->
+          <plugin>
+            <groupId>org.codehaus.mojo</groupId>
+            <artifactId>retrotranslator-maven-plugin</artifactId>
+            <executions>
+              <execution>
+                <phase>process-classes</phase>
+                <goals>
+                  <goal>translate</goal>
+                </goals>
+                <configuration>
+                  <includes>
+                    <include>
+                      <directory>target/classes</directory>
+                    </include>
+                  </includes>
+                </configuration>
+              </execution>
+            </executions>
+          </plugin>
+        </plugins>
+      </build>
+      <properties>
+        <!-- for releases, just use the POM version. See above ant-run plugin for how this gets used. -->
+        <build.version>${version}</build.version>
+      </properties>
+    </profile>
+  </profiles>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.apache.maven</groupId>
+      <artifactId>maven-embedder</artifactId>
+      <version>2.0.4</version>
+    </dependency>
+    <dependency>
+      <groupId>com.svnkit</groupId>
+      <artifactId>svnkit</artifactId>
+      <version>1.1.0</version>
+    </dependency>
+    <dependency>
+      <groupId>${groupId}</groupId>
+      <artifactId>maven-agent</artifactId>
+      <version>${version}</version>
+    </dependency>
+    <dependency>
+      <groupId>net.sf.retrotranslator</groupId>
+      <artifactId>retrotranslator-runtime</artifactId>
+      <version>1.0.8</version>
+    </dependency>
+    <dependency>
+      <!--
+        marked as test dependency so that I can still use it in the antrun plugin but
+        it won't show up as a public dependency
+      -->
+      <groupId>net.sf.retrotranslator</groupId>
+      <artifactId>retrotranslator-transformer</artifactId>
+      <version>1.0.8</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.kohsuke.stapler</groupId>
+      <artifactId>stapler</artifactId>
+      <version>1.23</version>
+    </dependency>
+    <dependency>
+      <groupId>org.kohsuke</groupId>
+      <artifactId>graph-layouter</artifactId>
+      <classifier>jdk14</classifier>
+      <version>1.0</version>
+    </dependency>
+    <dependency>
+      <groupId>antlr</groupId>
+      <artifactId>antlr</artifactId>
+      <version>2.7.6</version>
+    </dependency>
+    <dependency>
+      <groupId>xstream</groupId>
+      <artifactId>xstream</artifactId>
+      <version>1.1.3</version>
+    </dependency>
+    <dependency>
+      <groupId>jfree</groupId>
+      <artifactId>jfreechart</artifactId>
+      <version>1.0.3</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.ant</groupId>
+      <artifactId>ant-junit</artifactId>
+      <version>1.7.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.ant</groupId>
+      <artifactId>ant</artifactId>
+      <version>1.7.0</version>
+    </dependency>
+    <dependency>
+      <groupId>javax.servlet</groupId>
+      <artifactId>servlet-api</artifactId>
+      <version>2.4</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>commons-fileupload</groupId>
+      <artifactId>commons-fileupload</artifactId>
+      <version>1.1</version>
+    </dependency>
+    <dependency>
+      <groupId>commons-io</groupId>
+      <artifactId>commons-io</artifactId>
+      <version>1.2</version>
+    </dependency>
+    <dependency>
+      <groupId>commons-digester</groupId>
+      <artifactId>commons-digester</artifactId>
+      <version>1.7</version>
+    </dependency>
+    <dependency><!-- is this Java 1.4 compatible? -->
+      <groupId>javax.mail</groupId>
+      <artifactId>mail</artifactId>
+      <version>1.4</version>
+    </dependency>
+    <dependency>
+      <groupId>javax.activation</groupId>
+      <artifactId>activation</artifactId>
+      <version>1.1</version>
+    </dependency>
+    <dependency>
+      <groupId>dom4j</groupId>
+      <artifactId>dom4j</artifactId>
+      <version>1.6.1</version>
+    </dependency>
+    <dependency>
+      <groupId>jaxen</groupId>
+      <artifactId>jaxen</artifactId>
+      <version>1.1-beta-11</version>
+    </dependency>
+    <dependency>
+      <groupId>commons-jelly</groupId>
+      <artifactId>commons-jelly-tags-fmt</artifactId>
+      <version>1.0</version>
+    </dependency>
+    <dependency>
+      <groupId>commons-jelly</groupId>
+      <artifactId>commons-jelly-tags-xml</artifactId>
+      <version>1.1</version>
+    </dependency>
+    <dependency>
+      <groupId>commons-jelly</groupId>
+      <artifactId>commons-jelly-tags-define</artifactId>
+      <version>1.0.1-hudson-20061106</version>
+    </dependency>
+    <dependency>
+      <groupId>commons-jexl</groupId>
+      <artifactId>commons-jexl</artifactId>
+      <version>1.1-hudson-20061106</version>
+    </dependency>
+    <dependency>
+      <groupId>commons-jelly</groupId>
+      <artifactId>commons-jelly</artifactId>
+      <version>1.1-hudson-20061106</version>
+    </dependency>
+    <dependency>
+      <groupId>groovy</groupId>
+      <artifactId>groovy-all-1.0-jsr</artifactId>
+      <version>06</version>
+    </dependency>
+    <dependency>
+      <groupId>xpp3</groupId>
+      <artifactId>xpp3</artifactId>
+      <version>1.1.3.3</version>
+    </dependency>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8</version>
+    </dependency>
+    <dependency><!-- needed by Jelly -->
+      <groupId>jstl</groupId>
+      <artifactId>jstl</artifactId>
+      <version>1.1.0</version>
+    </dependency>
+  </dependencies>
+</project>

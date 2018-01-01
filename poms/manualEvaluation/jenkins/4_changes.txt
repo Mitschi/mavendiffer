@@ -1,0 +1,7 @@
+OLD: 4_0_old[89c18838a1c7b78fe7b3985b1c5bf7b4a83bfdc1]_pom.xml (/Users/chris/Documents/workspaceBuildChangeDifferVariants/semantic-differ/differ-maven-evaluation-tools/outputFolder/jenkins/4_0_old[89c18838a1c7b78fe7b3985b1c5bf7b4a83bfdc1]_pom.xml)
+NEW: 4_1_new[0ae1ff71d0e8bfa62f98216570bd5471a4e311e6]_pom.xml (/Users/chris/Documents/workspaceBuildChangeDifferVariants/semantic-differ/differ-maven-evaluation-tools/outputFolder/jenkins/4_1_new[0ae1ff71d0e8bfa62f98216570bd5471a4e311e6]_pom.xml)
+
+
+CHANGES: 
+========================
+MavenBuildChange [name=PLUGIN_CONFIGURATION_UPDATE]

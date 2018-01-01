@@ -1,0 +1,7 @@
+OLD: 0_0_old[131a17e16523b3107d46aa475c298af10d3cc9a5]_pom.xml (/Users/chris/Documents/workspaceBuildChangeDifferVariants/semantic-differ/differ-maven-evaluation-tools/outputFolder/spring-roo/0_0_old[131a17e16523b3107d46aa475c298af10d3cc9a5]_pom.xml)
+NEW: 0_1_new[80f08d8e08975598a39995547c70b71d8223ba97]_pom.xml (/Users/chris/Documents/workspaceBuildChangeDifferVariants/semantic-differ/differ-maven-evaluation-tools/outputFolder/spring-roo/0_1_new[80f08d8e08975598a39995547c70b71d8223ba97]_pom.xml)
+
+
+CHANGES: 
+========================
+MavenBuildChange [name=PLUGIN_DELETE]

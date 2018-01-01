@@ -1,0 +1,7 @@
+OLD: 1_0_old[9b98c7fffd5933e4c97116d71ccc8da0c861d7fb]_pom.xml (/Users/chris/Documents/workspaceBuildChangeDifferVariants/semantic-differ/differ-maven-evaluation-tools/outputFolder/wicket/1_0_old[9b98c7fffd5933e4c97116d71ccc8da0c861d7fb]_pom.xml)
+NEW: 1_1_new[02235bca36c777a8eef51f0f11e1bee211dc2afb]_pom.xml (/Users/chris/Documents/workspaceBuildChangeDifferVariants/semantic-differ/differ-maven-evaluation-tools/outputFolder/wicket/1_1_new[02235bca36c777a8eef51f0f11e1bee211dc2afb]_pom.xml)
+
+
+CHANGES: 
+========================
+MavenBuildChange [name=DIST_REPOSITORY_DELETE]

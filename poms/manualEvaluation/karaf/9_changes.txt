@@ -1,0 +1,7 @@
+OLD: 9_0_old[c8967860e06f1de50e022e79f95c8c9b76353f15]_pom.xml (/Users/chris/Documents/workspaceBuildChangeDifferVariants/semantic-differ/differ-maven-evaluation-tools/outputFolder/karaf/9_0_old[c8967860e06f1de50e022e79f95c8c9b76353f15]_pom.xml)
+NEW: 9_1_new[b7927ec4cb61106b3f79286dd02bfa4307c7980f]_pom.xml (/Users/chris/Documents/workspaceBuildChangeDifferVariants/semantic-differ/differ-maven-evaluation-tools/outputFolder/karaf/9_1_new[b7927ec4cb61106b3f79286dd02bfa4307c7980f]_pom.xml)
+
+
+CHANGES: 
+========================
+MavenBuildChange [name=MODULE_INSERT]

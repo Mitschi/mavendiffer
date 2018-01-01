@@ -1,0 +1,8 @@
+OLD: 1_0_old[c2106be5dc11e1dd56c64ed0fc71c84d2fbf62f6]_pom.xml (/Users/chris/Documents/workspaceBuildChangeDifferVariants/semantic-differ/differ-maven-evaluation-tools/outputFolder/karaf/1_0_old[c2106be5dc11e1dd56c64ed0fc71c84d2fbf62f6]_pom.xml)
+NEW: 1_1_new[b8114878e76cf322db408679c874ab15102e7d4e]_pom.xml (/Users/chris/Documents/workspaceBuildChangeDifferVariants/semantic-differ/differ-maven-evaluation-tools/outputFolder/karaf/1_1_new[b8114878e76cf322db408679c874ab15102e7d4e]_pom.xml)
+
+
+CHANGES: 
+========================
+MavenBuildChange [name=REPOSITORY_INSERT]
+MavenBuildChange [name=GENERAL_PROPERTY_UPDATE]

@@ -1,0 +1,1 @@
+MavenBuildChange [name=GENERAL_PROPERTY_UPDATE]

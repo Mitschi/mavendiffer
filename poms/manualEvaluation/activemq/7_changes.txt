@@ -1,0 +1,7 @@
+OLD: 7_0_old[0b9f0e34fdf121bb6098463232c4a76b6e054652]_pom.xml (/Users/chris/Documents/workspaceBuildChangeDifferVariants/semantic-differ/differ-maven-evaluation-tools/outputFolder/activemq/7_0_old[0b9f0e34fdf121bb6098463232c4a76b6e054652]_pom.xml)
+NEW: 7_1_new[21f67b88e31f5355a0eaf4cbef257859d698faf4]_pom.xml (/Users/chris/Documents/workspaceBuildChangeDifferVariants/semantic-differ/differ-maven-evaluation-tools/outputFolder/activemq/7_1_new[21f67b88e31f5355a0eaf4cbef257859d698faf4]_pom.xml)
+
+
+CHANGES: 
+========================
+MavenBuildChange [name=PROFILE_INSERT]

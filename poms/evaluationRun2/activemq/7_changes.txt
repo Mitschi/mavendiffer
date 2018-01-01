@@ -1,0 +1,4 @@
+MavenBuildChange [name=PLUGIN_CONFIGURATION_UPDATE]
+MavenBuildChange [name=PLUGIN_VERSION_UPDATE]
+MavenBuildChange [name=PLUGIN_VERSION_UPDATE]
+MavenBuildChange [name=PLUGIN_VERSION_UPDATE]

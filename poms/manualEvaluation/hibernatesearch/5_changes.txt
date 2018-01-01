@@ -1,0 +1,7 @@
+OLD: 5_0_old[88a3b0c8015b131b3fe9b73baebd79d265b4380c]_pom.xml (/Users/chris/Documents/workspaceBuildChangeDifferVariants/semantic-differ/differ-maven-evaluation-tools/outputFolder/hibernate-search/5_0_old[88a3b0c8015b131b3fe9b73baebd79d265b4380c]_pom.xml)
+NEW: 5_1_new[95547dff6b946b42ea40dc6aa9d0661fa4ee0fc7]_pom.xml (/Users/chris/Documents/workspaceBuildChangeDifferVariants/semantic-differ/differ-maven-evaluation-tools/outputFolder/hibernate-search/5_1_new[95547dff6b946b42ea40dc6aa9d0661fa4ee0fc7]_pom.xml)
+
+
+CHANGES: 
+========================
+MavenBuildChange [name=MODULE_INSERT]

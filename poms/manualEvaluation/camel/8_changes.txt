@@ -1,0 +1,7 @@
+OLD: 8_0_old[dc39c8723845f668bed3ada181904dc4bee0c704]_pom.xml (/Users/chris/Documents/workspaceBuildChangeDifferVariants/semantic-differ/differ-maven-evaluation-tools/outputFolder/camel/8_0_old[dc39c8723845f668bed3ada181904dc4bee0c704]_pom.xml)
+NEW: 8_1_new[28b2da46e6fc37cadc89f76512c48b89b4136805]_pom.xml (/Users/chris/Documents/workspaceBuildChangeDifferVariants/semantic-differ/differ-maven-evaluation-tools/outputFolder/camel/8_1_new[28b2da46e6fc37cadc89f76512c48b89b4136805]_pom.xml)
+
+
+CHANGES: 
+========================
+MavenBuildChange [name=GENERAL_PROPERTY_INSERT]

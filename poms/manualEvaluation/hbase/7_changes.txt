@@ -1,0 +1,18 @@
+OLD: 7_0_old[4cadb9a7a87a20d80c1843e2e142a1b67ccb861b]_pom.xml (/Users/chris/Documents/workspaceBuildChangeDifferVariants/semantic-differ/differ-maven-evaluation-tools/outputFolder/hbase/7_0_old[4cadb9a7a87a20d80c1843e2e142a1b67ccb861b]_pom.xml)
+NEW: 7_1_new[05980e26b887745219165d98567b3914be64dc9e]_pom.xml (/Users/chris/Documents/workspaceBuildChangeDifferVariants/semantic-differ/differ-maven-evaluation-tools/outputFolder/hbase/7_1_new[05980e26b887745219165d98567b3914be64dc9e]_pom.xml)
+
+
+CHANGES: 
+========================
+MavenBuildChange [name=PLUGIN_INSERT]
+MavenBuildChange [name=PLUGIN_DELETE]
+MavenBuildChange [name=PLUGIN_DELETE]
+MavenBuildChange [name=PLUGIN_DELETE]
+MavenBuildChange [name=PLUGIN_DELETE]
+MavenBuildChange [name=PLUGIN_DELETE]
+MavenBuildChange [name=PLUGIN_DELETE]
+MavenBuildChange [name=PLUGIN_DELETE]
+MavenBuildChange [name=PLUGIN_CONFIGURATION_DELETE]
+MavenBuildChange [name=PLUGIN_VERSION_DELETE]
+MavenBuildChange [name=PROJECT_GROUPID_UPDATE]
+MavenBuildChange [name=PROJECT_ARTIFACTID_UPDATE]

@@ -1,0 +1,6 @@
+OLD: 5_0_old[e5b60b7f8d06452fb871f2ba02d5a266e60156e7]_pom.xml (/Users/chris/Documents/workspaceBuildChangeDifferVariants/semantic-differ/differ-maven-evaluation-tools/outputFolder/spring-roo/5_0_old[e5b60b7f8d06452fb871f2ba02d5a266e60156e7]_pom.xml)
+NEW: 5_1_new[328b953120d0b9f24c9e89c0efa79769b50776c9]_pom.xml (/Users/chris/Documents/workspaceBuildChangeDifferVariants/semantic-differ/differ-maven-evaluation-tools/outputFolder/spring-roo/5_1_new[328b953120d0b9f24c9e89c0efa79769b50776c9]_pom.xml)
+
+
+CHANGES: 
+========================

@@ -1,0 +1,7 @@
+OLD: 1_0_old[611c65ec23c6ced8eaeac77773ed5578ee000296]_pom.xml (/Users/chris/Documents/workspaceBuildChangeDifferVariants/semantic-differ/differ-maven-evaluation-tools/outputFolder/spring-roo/1_0_old[611c65ec23c6ced8eaeac77773ed5578ee000296]_pom.xml)
+NEW: 1_1_new[9512ad7f40f89e3351eb18ef33cb57fa9bac0b3d]_pom.xml (/Users/chris/Documents/workspaceBuildChangeDifferVariants/semantic-differ/differ-maven-evaluation-tools/outputFolder/spring-roo/1_1_new[9512ad7f40f89e3351eb18ef33cb57fa9bac0b3d]_pom.xml)
+
+
+CHANGES: 
+========================
+MavenBuildChange [name=DEPENDENCY_VERSION_UPDATE]

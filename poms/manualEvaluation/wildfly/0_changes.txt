@@ -1,0 +1,7 @@
+OLD: 0_0_old[d9c26379cf58677b3899e7e5eb85ccccc706437d]_pom.xml (/Users/chris/Documents/workspaceBuildChangeDifferVariants/semantic-differ/differ-maven-evaluation-tools/outputFolder/wildfly/0_0_old[d9c26379cf58677b3899e7e5eb85ccccc706437d]_pom.xml)
+NEW: 0_1_new[8a3ea86e600adf3586e5bca79a9aaa0b3f11d786]_pom.xml (/Users/chris/Documents/workspaceBuildChangeDifferVariants/semantic-differ/differ-maven-evaluation-tools/outputFolder/wildfly/0_1_new[8a3ea86e600adf3586e5bca79a9aaa0b3f11d786]_pom.xml)
+
+
+CHANGES: 
+========================
+MavenBuildChange [name=PLUGIN_INSERT]

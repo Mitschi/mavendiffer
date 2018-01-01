@@ -1,0 +1,6 @@
+OLD: 8_0_old[86da57f498c68703979dcd7ecc4b0ef2ce03723d]_pom.xml (/Users/chris/Documents/workspaceBuildChangeDifferVariants/semantic-differ/differ-maven-evaluation-tools/outputFolder/hbase/8_0_old[86da57f498c68703979dcd7ecc4b0ef2ce03723d]_pom.xml)
+NEW: 8_1_new[68b94886a5cc0d8db26c49616669c244f9cae916]_pom.xml (/Users/chris/Documents/workspaceBuildChangeDifferVariants/semantic-differ/differ-maven-evaluation-tools/outputFolder/hbase/8_1_new[68b94886a5cc0d8db26c49616669c244f9cae916]_pom.xml)
+
+
+CHANGES: 
+========================

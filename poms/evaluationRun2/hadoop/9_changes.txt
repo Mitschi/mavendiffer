@@ -1,0 +1,2 @@
+MavenBuildChange [name=PROFILE_INSERT]
+MavenBuildChange [name=PLUGIN_VERSION_UPDATE]

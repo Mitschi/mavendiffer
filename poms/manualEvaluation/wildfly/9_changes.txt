@@ -1,0 +1,9 @@
+OLD: 9_0_old[38974ab933f8f9eb10b8642f22ded3143eb836ad]_pom.xml (/Users/chris/Documents/workspaceBuildChangeDifferVariants/semantic-differ/differ-maven-evaluation-tools/outputFolder/wildfly/9_0_old[38974ab933f8f9eb10b8642f22ded3143eb836ad]_pom.xml)
+NEW: 9_1_new[4318f80787bc5b4e8592d2a95b5a32909b13dc12]_pom.xml (/Users/chris/Documents/workspaceBuildChangeDifferVariants/semantic-differ/differ-maven-evaluation-tools/outputFolder/wildfly/9_1_new[4318f80787bc5b4e8592d2a95b5a32909b13dc12]_pom.xml)
+
+
+CHANGES: 
+========================
+MavenBuildChange [name=PROFILE_DELETE]
+MavenBuildChange [name=MODULE_DELETE]
+MavenBuildChange [name=MODULE_DELETE]
