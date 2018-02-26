@@ -8,8 +8,9 @@
     </parent>
     -->
     <modelVersion>4.0.0</modelVersion>
-
-    <artifactId>maven-differ</artifactId>
+	<groupId>at.aau.buildtools</groupId>
+	<artifactId>maven-differ</artifactId>
+    <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <name>Build Tools - Maven - BuildDiff</name>
