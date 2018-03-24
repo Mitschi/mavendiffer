@@ -77,7 +77,7 @@ public class WicketEvaluationTest {
 		oldTmpFile = new File(PATH_PREFIX+"wicket/2_0_old[a039e5f8c81f7c38801ee7b43fca0dce4be20564]_pom.xml");
 		newTmpFile = new File(PATH_PREFIX+"wicket/2_1_new[0a06ea43bde30dd6ad82dc4887a3f0c6a736e1d9]_pom.xml");
 		expectedChanges=new ArrayList<Change>();
-		expectedChanges.add(new MavenBuildChange("MANAGED_DEPENDENCY_VERSION_UPDATE","2.0","3.0"));
+		expectedChanges.add(new MavenBuildChange("MANAGED_DEPENDENCY_MAJOR_VERSION_INCREASE","2.0","3.0"));
 		o = new Object[]{oldTmpFile,newTmpFile,expectedChanges};
 		retVal.add(o);
 
@@ -85,7 +85,7 @@ public class WicketEvaluationTest {
 		newTmpFile = new File(PATH_PREFIX+"wicket/3_1_new[4f75e452eb6a5f9e4a04f01bf74bf591f836ac85]_pom.xml");
 		expectedChanges=new ArrayList<Change>();
 		expectedChanges.add(new MavenBuildChange("PLUGIN_UPDATE","org.mortbay.jetty/maven-jetty6-plugin/6.0-SNAPSHOT","org.mortbay.jetty/maven-jetty-plugin/6.0-SNAPSHOT"));
-		expectedChanges.add(new MavenBuildChange("PLUGIN_VERSION_UPDATE","6.0-SNAPSHOT","6.0.0rc1"));
+		expectedChanges.add(new MavenBuildChange("PLUGIN_POSTFIX_VERSION_UPDATE","6.0-SNAPSHOT","6.0.0rc1"));
 		o = new Object[]{oldTmpFile,newTmpFile,expectedChanges};
 		retVal.add(o);
 
@@ -128,7 +128,7 @@ public class WicketEvaluationTest {
 		oldTmpFile = new File(PATH_PREFIX+"wicket/8_0_old[3f8408cb394f5d2230ee15ad46ee08ae0faea209]_pom.xml");
 		newTmpFile = new File(PATH_PREFIX+"wicket/8_1_new[583287eb8f2c1f2c13c0956bd81d7d43a73abe53]_pom.xml");
 		expectedChanges=new ArrayList<Change>();
-		expectedChanges.add(new MavenBuildChange("PLUGIN_VERSION_UPDATE","2.2-SNAPSHOT","2.2-beta-1"));
+		expectedChanges.add(new MavenBuildChange("PLUGIN_POSTFIX_VERSION_UPDATE","2.2-SNAPSHOT","2.2-beta-1"));
 		expectedChanges.add(new MavenBuildChange("PLUGIN_VERSION_INSERT","","2.0.1"));
 		expectedChanges.add(new MavenBuildChange("PLUGIN_VERSION_INSERT","","1.0-alpha-3"));
 		expectedChanges.add(new MavenBuildChange("PLUGIN_VERSION_INSERT","","2.0.2"));
@@ -146,7 +146,7 @@ public class WicketEvaluationTest {
 		oldTmpFile = new File(PATH_PREFIX+"wicket/9_0_old[06027af8e11e7a4c5bde50d7d174b523539c9d73]_pom.xml");
 		newTmpFile = new File(PATH_PREFIX+"wicket/9_1_new[dab4dac177249c6db6a169890cc72e9b9b6ca6b9]_pom.xml");
 		expectedChanges=new ArrayList<Change>();
-		expectedChanges.add(new MavenBuildChange("MANAGED_DEPENDENCY_VERSION_UPDATE","0.10-SNAPSHOT","0.22-SNAPSHOT"));
+		expectedChanges.add(new MavenBuildChange("MANAGED_DEPENDENCY_MINOR_VERSION_INCREASE","0.10-SNAPSHOT","0.22-SNAPSHOT"));
 		o = new Object[]{oldTmpFile,newTmpFile,expectedChanges};
 		retVal.add(o);
 

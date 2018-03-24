@@ -83,7 +83,7 @@ public class DependencyChangesTest {
         oldTmpFile = new File(PATH_PREFIX+"poms/standard/pom_base.xml");
         newTmpFile = new File(PATH_PREFIX+"poms/standard/pom_changeVersion.xml");
         expectedChanges=new ArrayList<Change>();
-        expectedChanges.add(new MavenBuildChange("DEPENDENCY_VERSION_UPDATE","19.0","22.0"));
+        expectedChanges.add(new MavenBuildChange("DEPENDENCY_MAJOR_VERSION_INCREASE","19.0","22.0"));
         o = new Object[]{oldTmpFile,newTmpFile,expectedChanges};
         retVal.add(o);
         
@@ -155,7 +155,7 @@ public class DependencyChangesTest {
         oldTmpFile = new File(PATH_PREFIX+"poms/standard/pom_base_depmgmt.xml");
         newTmpFile = new File(PATH_PREFIX+"poms/standard/pom_changeMgdVersion.xml");
         expectedChanges=new ArrayList<Change>();
-        expectedChanges.add(new MavenBuildChange("MANAGED_DEPENDENCY_VERSION_UPDATE","13.2","13.5"));
+        expectedChanges.add(new MavenBuildChange("MANAGED_DEPENDENCY_MINOR_VERSION_INCREASE","13.2","13.5"));
         o = new Object[]{oldTmpFile,newTmpFile,expectedChanges};
         retVal.add(o);
         

@@ -77,10 +77,10 @@ public class HadoopEvaluationTest {
 		oldTmpFile = new File(PATH_PREFIX+"hadoop/2_0_old[848338c4900aa9bbb77acf0fb3bee256908d6e5e]_pom.xml");
 		newTmpFile = new File(PATH_PREFIX+"hadoop/2_1_new[86cf02f8697065ea1819666bbe4d3e06fcaf66bb]_pom.xml");
 		expectedChanges=new ArrayList<Change>();
-		expectedChanges.add(new MavenBuildChange("PLUGIN_VERSION_UPDATE","2.4.1","2.5"));
-		expectedChanges.add(new MavenBuildChange("PLUGIN_VERSION_UPDATE","2.4.3","2.5"));
-		expectedChanges.add(new MavenBuildChange("PLUGIN_VERSION_UPDATE","2.8","2.12"));
-		expectedChanges.add(new MavenBuildChange("PLUGIN_VERSION_UPDATE","2.3.2","2.4"));
+		expectedChanges.add(new MavenBuildChange("PLUGIN_MINOR_VERSION_INCREASE","2.4.1","2.5"));
+		expectedChanges.add(new MavenBuildChange("PLUGIN_MINOR_VERSION_INCREASE","2.4.3","2.5"));
+		expectedChanges.add(new MavenBuildChange("PLUGIN_MINOR_VERSION_INCREASE","2.8","2.12"));
+		expectedChanges.add(new MavenBuildChange("PLUGIN_MINOR_VERSION_INCREASE","2.3.2","2.4"));
 		expectedChanges.add(new MavenBuildChange("GENERAL_PROPERTY_UPDATE","spring.version/3.1.0.RELEASE","spring.version/3.1.1.RELEASE"));
 		o = new Object[]{oldTmpFile,newTmpFile,expectedChanges};
 		retVal.add(o);

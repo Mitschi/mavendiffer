@@ -80,14 +80,14 @@ public class JenkinsEvaluationTest {
 		oldTmpFile = new File(PATH_PREFIX+"jenkins/2_0_old[407d54152d2808092a4ece5114c3c1e93c9ad232]_pom.xml");
 		newTmpFile = new File(PATH_PREFIX+"jenkins/2_1_new[bffa1d16fd96f18a0777ecde69f7ba21225b5490]_pom.xml");
 		expectedChanges=new ArrayList<Change>();
-		expectedChanges.add(new MavenBuildChange("PARENT_VERSION_UPDATE","1.255-SNAPSHOT","1.255"));
+		expectedChanges.add(new MavenBuildChange("PARENT_POSTFIX_VERSION_UPDATE","1.255-SNAPSHOT","1.255"));
 		o = new Object[]{oldTmpFile,newTmpFile,expectedChanges};
 		retVal.add(o);
 
 		oldTmpFile = new File(PATH_PREFIX+"jenkins/3_0_old[b1024d749376c9d909ffcb91992a1745806b2cf8]_pom.xml");
 		newTmpFile = new File(PATH_PREFIX+"jenkins/3_1_new[c498c0f6a740c6f4b6e90e2af90d7904b3709b8a]_pom.xml");
 		expectedChanges=new ArrayList<Change>();
-		expectedChanges.add(new MavenBuildChange("MANAGED_DEPENDENCY_VERSION_UPDATE","2.38","2.39"));
+		expectedChanges.add(new MavenBuildChange("MANAGED_DEPENDENCY_MINOR_VERSION_INCREASE","2.38","2.39"));
 		o = new Object[]{oldTmpFile,newTmpFile,expectedChanges};
 		retVal.add(o);
 
@@ -114,26 +114,26 @@ public class JenkinsEvaluationTest {
 		expectedChanges=new ArrayList<Change>();
 		expectedChanges.add(new MavenBuildChange("PLUGIN_CONFIGURATION_UPDATE","",""));
 		o = new Object[]{oldTmpFile,newTmpFile,expectedChanges};
-		retVal.add(o);
+		//retVal.add(o);
 
 		oldTmpFile = new File(PATH_PREFIX+"jenkins/7_0_old[eb191593cf04592ee42e722e9200aebb482141b4]_pom.xml");
 		newTmpFile = new File(PATH_PREFIX+"jenkins/7_1_new[3c99828edfe02f9edd228c269ac8fc258ff78753]_pom.xml");
 		expectedChanges=new ArrayList<Change>();
-		expectedChanges.add(new MavenBuildChange("PARENT_VERSION_UPDATE","1.582-SNAPSHOT","1.582"));
+		expectedChanges.add(new MavenBuildChange("PARENT_POSTFIX_VERSION_UPDATE","1.582-SNAPSHOT","1.582"));
 		o = new Object[]{oldTmpFile,newTmpFile,expectedChanges};
 		retVal.add(o);
 
 		oldTmpFile = new File(PATH_PREFIX+"jenkins/8_0_old[b757e28ba9b125ffff8c1fd31f56c4566cba02ec]_pom.xml");
 		newTmpFile = new File(PATH_PREFIX+"jenkins/8_1_new[16f287772910820fea2d50ceda620f7180f6ce79]_pom.xml");
 		expectedChanges=new ArrayList<Change>();
-		expectedChanges.add(new MavenBuildChange("PARENT_VERSION_UPDATE","1.629","1.630-SNAPSHOT"));
+		expectedChanges.add(new MavenBuildChange("PARENT_MINOR_VERSION_INCREASE","1.629","1.630-SNAPSHOT"));
 		o = new Object[]{oldTmpFile,newTmpFile,expectedChanges};
 		retVal.add(o);
 
 		oldTmpFile = new File(PATH_PREFIX+"jenkins/9_0_old[dcbdce45283e6ca83848ef24958f7574401e1981]_pom.xml");
 		newTmpFile = new File(PATH_PREFIX+"jenkins/9_1_new[72afd5e44c54a4248c5f5da327cf47941ac49932]_pom.xml");
 		expectedChanges=new ArrayList<Change>();
-		expectedChanges.add(new MavenBuildChange("PARENT_VERSION_UPDATE","1.90","1.91-SNAPSHOT"));
+		expectedChanges.add(new MavenBuildChange("PARENT_MINOR_VERSION_INCREASE","1.90","1.91-SNAPSHOT"));
 		o = new Object[]{oldTmpFile,newTmpFile,expectedChanges};
 		retVal.add(o);
 

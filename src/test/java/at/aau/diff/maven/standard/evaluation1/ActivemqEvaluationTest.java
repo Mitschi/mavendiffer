@@ -80,7 +80,7 @@ public class ActivemqEvaluationTest {
 		oldTmpFile = new File(PATH_PREFIX+"activemq/2_0_old[bf89dca9768f4d66a08644ba0c9ac91b1e63608a]_pom.xml");
 		newTmpFile = new File(PATH_PREFIX+"activemq/2_1_new[7539f6c723fc0deacc12e03c7046b5d30763b54d]_pom.xml");
 		expectedChanges=new ArrayList<Change>();
-		expectedChanges.add(new MavenBuildChange("PARENT_VERSION_UPDATE","1.2.6.BUILD-SNAPSHOT","1.3.0.RELEASE"));
+		expectedChanges.add(new MavenBuildChange("PARENT_MINOR_VERSION_INCREASE","1.2.6.BUILD-SNAPSHOT","1.3.0.RELEASE"));
 		o = new Object[]{oldTmpFile,newTmpFile,expectedChanges};
 		retVal.add(o);
 

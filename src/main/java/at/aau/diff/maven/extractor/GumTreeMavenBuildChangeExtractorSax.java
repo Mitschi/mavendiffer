@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 import at.aau.diff.common.Change;
+import at.aau.diff.common.Version;
+import at.aau.diff.common.VersionChange;
 import at.aau.diff.maven.MavenBuildChange;
 
 import com.github.gumtreediff.actions.ActionGenerator;
@@ -612,7 +614,8 @@ public class GumTreeMavenBuildChangeExtractorSax {
 		}
 		if("version".equals(tagName) && !hasParent(node, "plugin")
 				&& !hasParent(node, "parent")  && !hasParent(node, "dependency") && !hasParent(node, "plugin")) {
-			return new MavenBuildChange("PROJECT_VERSION_UPDATE",node.getLabel(),action.getValue());
+			return createVersionChange("PROJECT_",node.getLabel(),action.getValue());
+//		    return new MavenBuildChange("PROJECT_VERSION_UPDATE",node.getLabel(),action.getValue());
 		}
 		//======
 		//"plain" dependencies - no dep mgmt
@@ -641,7 +644,8 @@ public class GumTreeMavenBuildChangeExtractorSax {
 		
 		if("version".equals(tagName)  
 				&& !hasParent(node, "profile")  && hasParent(node, "dependency")&& !hasParent(node, "plugin")&& !hasParent(node, "dependencyManagement")) {
-			return new MavenBuildChange("DEPENDENCY_VERSION_UPDATE",node.getLabel(),action.getValue());
+            return createVersionChange("DEPENDENCY_",node.getLabel(),action.getValue());
+//		    return new MavenBuildChange("DEPENDENCY_VERSION_UPDATE",node.getLabel(),action.getValue());
 		}
 		//=======
 		//======
@@ -671,7 +675,8 @@ public class GumTreeMavenBuildChangeExtractorSax {
 		
 		if("version".equals(tagName)  
 				&& !hasParent(node, "profile")  && hasParent(node, "dependency")&& !hasParent(node, "plugin")&& hasParent(node, "dependencyManagement")) {
-			return new MavenBuildChange("MANAGED_DEPENDENCY_VERSION_UPDATE",node.getLabel(),action.getValue());
+            return createVersionChange("MANAGED_DEPENDENCY_",node.getLabel(),action.getValue());
+//		    return new MavenBuildChange("MANAGED_DEPENDENCY_VERSION_UPDATE",node.getLabel(),action.getValue());
 		}
 		//=======
 		//======
@@ -701,7 +706,8 @@ public class GumTreeMavenBuildChangeExtractorSax {
 		
 		if("version".equals(tagName)  
 				&& !hasParent(node, "profile")  && hasParent(node, "dependency")&& hasParent(node, "plugin")) {
-			return new MavenBuildChange("PLUGIN_DEPENDENCY_VERSION_UPDATE",node.getLabel(),action.getValue());
+            return createVersionChange("PLUGIN_DEPENDENCY_",node.getLabel(),action.getValue());
+//			return new MavenBuildChange("PLUGIN_DEPENDENCY_VERSION_UPDATE",node.getLabel(),action.getValue());
 		}
 		//=======
 		if("groupId".equals(tagName) && hasParent(node, "plugin") && !hasParent(node, "dependency")) {
@@ -718,7 +724,8 @@ public class GumTreeMavenBuildChangeExtractorSax {
 		}
 		if("version".equals(tagName) && hasParent(node, "plugin") 
 				&& !hasParent(node, "parent")  && !hasParent(node, "dependency")) {
-			return new MavenBuildChange("PLUGIN_VERSION_UPDATE",node.getLabel(),action.getValue());
+            return createVersionChange("PLUGIN_",node.getLabel(),action.getValue());
+//			return new MavenBuildChange("PLUGIN_VERSION_UPDATE",node.getLabel(),action.getValue());
 		}
 		//=======
 		if("groupId".equals(tagName) &&  hasParent(node, "parent")) {
@@ -728,7 +735,8 @@ public class GumTreeMavenBuildChangeExtractorSax {
 			return new MavenBuildChange("PARENT_ARTIFACTID_UPDATE",node.getLabel(),action.getValue());
 		}
 		if("version".equals(tagName) &&  hasParent(node, "parent")) {
-			return new MavenBuildChange("PARENT_VERSION_UPDATE",node.getLabel(),action.getValue());
+            return createVersionChange("PARENT_",node.getLabel(),action.getValue());
+//			return new MavenBuildChange("PARENT_VERSION_UPDATE",node.getLabel(),action.getValue());
 		}
 		
 		if("name".equals(tagName) && hasParent(node, "license") ) {
@@ -897,8 +905,14 @@ public class GumTreeMavenBuildChangeExtractorSax {
 		}
 		return null;
 	}
-	
-	public static String getTagName(ITree node) {
+
+    private static MavenBuildChange createVersionChange(String changePrefix, String from, String to) {
+        VersionChange versionChange = Version.extractVersionChange(Version.parseVersion(from), Version.parseVersion(to));
+        return new MavenBuildChange(changePrefix+versionChange.toString(),from,to);
+//        return new MavenBuildChange(changePrefix+"VERSION_UPDATE",from,to);
+    }
+
+    public static String getTagName(ITree node) {
 //		System.out.println(node.getType());
 		if(node.getType()==1) {
 			return node.getLabel();

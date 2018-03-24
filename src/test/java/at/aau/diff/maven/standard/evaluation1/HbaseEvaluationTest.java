@@ -63,13 +63,13 @@ public class HbaseEvaluationTest {
         File oldTmpFile = new File(PATH_PREFIX+"hbase/0_0_old[c1db284a85a233d025abb8a3bd33ef4422ebcc94]_pom.xml");
 		File newTmpFile = new File(PATH_PREFIX+"hbase/0_1_new[11cba67ae4d6da28de433f434015baba94c039ee]_pom.xml");
 		List<Change> expectedChanges=new ArrayList<Change>();
-		expectedChanges.add(new MavenBuildChange("MANAGED_DEPENDENCY_VERSION_UPDATE","4.9","4.10"));
+		expectedChanges.add(new MavenBuildChange("MANAGED_DEPENDENCY_MINOR_VERSION_INCREASE","4.9","4.10"));
         Object[] o = new Object[]{oldTmpFile,newTmpFile,expectedChanges};
 		retVal.add(o);
 		oldTmpFile = new File(PATH_PREFIX+"hbase/1_0_old[945686622a56391af7f7ce111f38edfd32244855]_pom.xml");
 		newTmpFile = new File(PATH_PREFIX+"hbase/1_1_new[c256575ba9a1da69d5da7d913cf3022b3c9d13d0]_pom.xml");
 		expectedChanges=new ArrayList<Change>();
-		expectedChanges.add(new MavenBuildChange("PARENT_VERSION_UPDATE","1.2.6.BUILD-SNAPSHOT","1.3.0.RELEASE"));
+		expectedChanges.add(new MavenBuildChange("PARENT_MINOR_VERSION_INCREASE","1.2.6.BUILD-SNAPSHOT","1.3.0.RELEASE"));
 		o = new Object[]{oldTmpFile,newTmpFile,expectedChanges};
 		retVal.add(o);
 

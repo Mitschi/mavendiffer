@@ -69,7 +69,7 @@ public class SpringrooEvaluationTest {
 		oldTmpFile = new File(PATH_PREFIX+"springroo/1_0_old[611c65ec23c6ced8eaeac77773ed5578ee000296]_pom.xml");
 		newTmpFile = new File(PATH_PREFIX+"springroo/1_1_new[9512ad7f40f89e3351eb18ef33cb57fa9bac0b3d]_pom.xml");
 		expectedChanges=new ArrayList<Change>();
-		expectedChanges.add(new MavenBuildChange("MANAGED_DEPENDENCY_VERSION_UPDATE","4.10","4.11"));
+		expectedChanges.add(new MavenBuildChange("MANAGED_DEPENDENCY_MINOR_VERSION_INCREASE","4.10","4.11"));
 		o = new Object[]{oldTmpFile,newTmpFile,expectedChanges};
 		retVal.add(o);
 
@@ -119,17 +119,17 @@ public class SpringrooEvaluationTest {
 		oldTmpFile = new File(PATH_PREFIX+"springroo/8_0_old[f942a4ef593123c6e7ada1e4ced23673faa92924]_pom.xml");
 		newTmpFile = new File(PATH_PREFIX+"springroo/8_1_new[bfbb4e5f57dcf65786c77f03b24b91ba7d890d9e]_pom.xml");
 		expectedChanges=new ArrayList<Change>();
-		expectedChanges.add(new MavenBuildChange("PLUGIN_VERSION_UPDATE","3.0-beta-3","3.0"));
-		expectedChanges.add(new MavenBuildChange("PLUGIN_DEPENDENCY_VERSION_UPDATE","0.93","1.0"));
+		expectedChanges.add(new MavenBuildChange("PLUGIN_POSTFIX_VERSION_UPDATE","3.0-beta-3","3.0"));
+		expectedChanges.add(new MavenBuildChange("PLUGIN_DEPENDENCY_MAJOR_VERSION_INCREASE","0.93","1.0"));
 		o = new Object[]{oldTmpFile,newTmpFile,expectedChanges};
 		retVal.add(o);
 
 		oldTmpFile = new File(PATH_PREFIX+"springroo/9_0_old[a7e33c3f96e9a53cf8809428dcce568ea41df005]_pom.xml");
 		newTmpFile = new File(PATH_PREFIX+"springroo/9_1_new[f6865072c206b40228d819516f4ef00233838a13]_pom.xml");
 		expectedChanges=new ArrayList<Change>();
-		expectedChanges.add(new MavenBuildChange("PLUGIN_VERSION_UPDATE","1.1","1.2"));
-		expectedChanges.add(new MavenBuildChange("PLUGIN_VERSION_UPDATE", "2.7.2","2.8"));
-		expectedChanges.add(new MavenBuildChange("PLUGIN_VERSION_UPDATE","2.5","2.6"));
+		expectedChanges.add(new MavenBuildChange("PLUGIN_MINOR_VERSION_INCREASE","1.1","1.2"));
+		expectedChanges.add(new MavenBuildChange("PLUGIN_MINOR_VERSION_INCREASE", "2.7.2","2.8"));
+		expectedChanges.add(new MavenBuildChange("PLUGIN_MINOR_VERSION_INCREASE","2.5","2.6"));
 		o = new Object[]{oldTmpFile,newTmpFile,expectedChanges};
 		retVal.add(o);
 

@@ -63,7 +63,7 @@ public class GeneralChangesTest {
         File oldTmpFile = new File(PATH_PREFIX+"poms/standard/pom_base.xml");
 		File newTmpFile = new File(PATH_PREFIX+"poms/standard/pom_changeProjectVersion.xml");
 		List<Change> expectedChanges=new ArrayList<Change>();
-		expectedChanges.add(new MavenBuildChange("PROJECT_VERSION_UPDATE","1.0-SNAPSHOT","2.0-SNAPSHOT"));
+		expectedChanges.add(new MavenBuildChange("PROJECT_MAJOR_VERSION_INCREASE","1.0-SNAPSHOT","2.0-SNAPSHOT"));
         Object[] o = new Object[]{oldTmpFile,newTmpFile,expectedChanges};
         retVal.add(o);
         
@@ -202,7 +202,7 @@ public class GeneralChangesTest {
         oldTmpFile = new File(PATH_PREFIX+"poms/standard/pom_base_parent.xml");
         newTmpFile = new File(PATH_PREFIX+"poms/standard/pom_changeParentVersion.xml");
         expectedChanges=new ArrayList<Change>();
-        expectedChanges.add(new MavenBuildChange("PARENT_VERSION_UPDATE","17","20"));
+        expectedChanges.add(new MavenBuildChange("PARENT_MAJOR_VERSION_INCREASE","17","20"));
         o = new Object[]{oldTmpFile,newTmpFile,expectedChanges};
         retVal.add(o);
 

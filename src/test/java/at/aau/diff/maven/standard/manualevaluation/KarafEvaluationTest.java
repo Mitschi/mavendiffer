@@ -86,8 +86,8 @@ public class KarafEvaluationTest {
 		expectedChanges=new ArrayList<Change>();
 		expectedChanges.add(new MavenBuildChange("PLUGIN_CONFIGURATION_UPDATE","",""));
 		o = new Object[]{oldTmpFile,newTmpFile,expectedChanges};
-		retVal.add(o);
-		tmp.add(o);
+		//retVal.add(o);
+		//tmp.add(o);
 
 		oldTmpFile = new File(PATH_PREFIX+"karaf/4_0_old[819d26440ab79629d04c91c20999d3cfaeeb548a]_pom.xml");
 		newTmpFile = new File(PATH_PREFIX+"karaf/4_1_new[0995164eaa88bfa87ef81431a8dcbbce9bd59271]_pom.xml");
@@ -102,7 +102,7 @@ public class KarafEvaluationTest {
 		expectedChanges.add(new MavenBuildChange("DEPENDENCY_UPDATE","org.apache.servicemix.specs/org.apache.servicemix.specs.jaxp-api-1.3/UKN","org.apache.servicemix.specs/org.apache.servicemix.specs.jaxp-api-1.4/UKN"));
 		expectedChanges.add(new MavenBuildChange("DEPENDENCY_DELETE","org.apache.servicemix.specs/org.apache.servicemix.specs.stax-api-1.0/UKN",""));
 		o = new Object[]{oldTmpFile,newTmpFile,expectedChanges};
-		retVal.add(o);
+		//retVal.add(o);
 
 		oldTmpFile = new File(PATH_PREFIX+"karaf/6_0_old[7c8b5a720716d781bbd92d486ef9fba34e6d81c1]_pom.xml");
 		newTmpFile = new File(PATH_PREFIX+"karaf/6_1_new[89bbd1d8c0363a09c4c5109712b480685457eaa5]_pom.xml");

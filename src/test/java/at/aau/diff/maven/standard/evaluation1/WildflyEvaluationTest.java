@@ -63,13 +63,13 @@ public class WildflyEvaluationTest {
         File oldTmpFile = new File(PATH_PREFIX+"wildfly/0_0_old[f67822aef1bbdb722462493316b1547a6cf06ff5]_pom.xml");
 		File newTmpFile = new File(PATH_PREFIX+"wildfly/0_1_new[1eaad0fcdbbca08c82feabeaa46542dcb6b263de]_pom.xml");
 		List<Change> expectedChanges=new ArrayList<Change>();
-		expectedChanges.add(new MavenBuildChange("PARENT_VERSION_UPDATE","1.2.6.BUILD-SNAPSHOT","1.3.0.RELEASE"));
+		expectedChanges.add(new MavenBuildChange("PARENT_MINOR_VERSION_INCREASE","1.2.6.BUILD-SNAPSHOT","1.3.0.RELEASE"));
         Object[] o = new Object[]{oldTmpFile,newTmpFile,expectedChanges};
 		retVal.add(o);
 		oldTmpFile = new File(PATH_PREFIX+"wildfly/1_0_old[0d2003d8aa5ee416b79ada607419e95f3a4e5b5a]_pom.xml");
 		newTmpFile = new File(PATH_PREFIX+"wildfly/1_1_new[03c9275597a9a3f42de2a1da54c3b293aa7b7a8e]_pom.xml");
 		expectedChanges=new ArrayList<Change>();
-		expectedChanges.add(new MavenBuildChange("PARENT_VERSION_UPDATE","1.2.6.BUILD-SNAPSHOT","1.3.0.RELEASE"));
+		expectedChanges.add(new MavenBuildChange("PARENT_MINOR_VERSION_INCREASE","1.2.6.BUILD-SNAPSHOT","1.3.0.RELEASE"));
 		o = new Object[]{oldTmpFile,newTmpFile,expectedChanges};
 		retVal.add(o);
 

@@ -70,7 +70,7 @@ public class HibernatesearchEvaluationTest {
 		oldTmpFile = new File(PATH_PREFIX+"hibernatesearch/1_0_old[e645436f92b72ba4dfcf9479b764501845d2e1ef]_pom.xml");
 		newTmpFile = new File(PATH_PREFIX+"hibernatesearch/1_1_new[52d32405b6606e0a49e2cb3f6cadc4aacab436c3]_pom.xml");
 		expectedChanges=new ArrayList<Change>();
-		expectedChanges.add(new MavenBuildChange("DEPENDENCY_VERSION_UPDATE","2.0.0","${elasticsearchJestVersion}"));
+		expectedChanges.add(new MavenBuildChange("DEPENDENCY_UNKNOWN_VERSION_UPDATE","2.0.0","${elasticsearchJestVersion}"));
 		o = new Object[]{oldTmpFile,newTmpFile,expectedChanges};
 		retVal.add(o);
 
@@ -86,8 +86,8 @@ public class HibernatesearchEvaluationTest {
 		expectedChanges=new ArrayList<Change>();
 		expectedChanges.add(new MavenBuildChange("DEPENDENCY_UPDATE","org.apache.solr/solr-analysis-extras/${luceneVersion}","org.apache.solr/solr-analysis-extras/${luceneVersion}"));
 		o = new Object[]{oldTmpFile,newTmpFile,expectedChanges};
-		retVal.add(o);
-		tmp.add(o);
+		//retVal.add(o);
+		//tmp.add(o);
 
 		oldTmpFile = new File(PATH_PREFIX+"hibernatesearch/4_0_old[edcec4b6feddbbfbd2d927d9039806dae381a495]_pom.xml");
 		newTmpFile = new File(PATH_PREFIX+"hibernatesearch/4_1_new[7c0340953f10ec083334df0d836534f97fb98844]_pom.xml");
@@ -106,7 +106,7 @@ public class HibernatesearchEvaluationTest {
 		oldTmpFile = new File(PATH_PREFIX+"hibernatesearch/6_0_old[3dd0e7b630f8ca3947b57833bc9ea5e66d79ddf7]_pom.xml");
 		newTmpFile = new File(PATH_PREFIX+"hibernatesearch/6_1_new[6fcd7c425ee271853d6e987791aeebbe69ea89a9]_pom.xml");
 		expectedChanges=new ArrayList<Change>();
-		expectedChanges.add(new MavenBuildChange("PARENT_VERSION_UPDATE","5.3.0.Beta1","5.3.0-SNAPSHOT"));
+		expectedChanges.add(new MavenBuildChange("PARENT_POSTFIX_VERSION_UPDATE","5.3.0.Beta1","5.3.0-SNAPSHOT"));
 		o = new Object[]{oldTmpFile,newTmpFile,expectedChanges};
 		retVal.add(o);
 

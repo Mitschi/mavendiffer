@@ -92,7 +92,7 @@ public class JenkinsEvaluationTest {
 		oldTmpFile = new File(PATH_PREFIX+"jenkins/1_0_old[e3c810a1b497934aa0da6c078e29dba72440fbbf]_pom.xml");
 		newTmpFile = new File(PATH_PREFIX+"jenkins/1_1_new[d3f5f5d65f1d4d052cd1b54b4f2d6822c7b5746e]_pom.xml");
 		expectedChanges=new ArrayList<Change>();
-		expectedChanges.add(new MavenBuildChange("PARENT_VERSION_UPDATE","1.2.6.BUILD-SNAPSHOT","1.3.0.RELEASE"));
+		expectedChanges.add(new MavenBuildChange("PARENT_MINOR_VERSION_INCREASE","1.2.6.BUILD-SNAPSHOT","1.3.0.RELEASE"));
 		o = new Object[]{oldTmpFile,newTmpFile,expectedChanges};
 		retVal.add(o);
 

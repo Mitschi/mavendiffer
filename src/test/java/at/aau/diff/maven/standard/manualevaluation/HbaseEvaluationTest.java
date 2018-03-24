@@ -69,7 +69,7 @@ public class HbaseEvaluationTest {
 		oldTmpFile = new File(PATH_PREFIX+"hbase/1_0_old[5fce119685c9b2db1afb7189dc7bbf631b2933ac]_pom.xml");
 		newTmpFile = new File(PATH_PREFIX+"hbase/1_1_new[1fab626bc722d2a39c0563279a89b6b58afe85c0]_pom.xml");
 		expectedChanges=new ArrayList<Change>();
-		expectedChanges.add(new MavenBuildChange("PLUGIN_VERSION_UPDATE","1.0-beta-3","1.0"));
+		expectedChanges.add(new MavenBuildChange("PLUGIN_POSTFIX_VERSION_UPDATE","1.0-beta-3","1.0"));
 		expectedChanges.add(new MavenBuildChange("PLUGIN_CONFIGURATION_UPDATE","",""));
 		o = new Object[]{oldTmpFile,newTmpFile,expectedChanges};
 		retVal.add(o);

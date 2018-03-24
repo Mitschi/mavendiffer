@@ -77,7 +77,7 @@ public class CamelEvaluationTest {
 		oldTmpFile = new File(PATH_PREFIX+"camel/2_0_old[c55bb41e05a612e4a9d9ba7a3f502941467f9e96]_pom.xml");
 		newTmpFile = new File(PATH_PREFIX+"camel/2_1_new[53edb20792820f5b784851fbdf681e00ca6fbbe2]_pom.xml");
 		expectedChanges=new ArrayList<Change>();
-		expectedChanges.add(new MavenBuildChange("DEPENDENCY_VERSION_UPDATE","4.5","4.7"));
+		expectedChanges.add(new MavenBuildChange("DEPENDENCY_MINOR_VERSION_INCREASE","4.5","4.7"));
 		o = new Object[]{oldTmpFile,newTmpFile,expectedChanges};
 		retVal.add(o);
 

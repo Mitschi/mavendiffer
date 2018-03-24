@@ -107,7 +107,7 @@ public class BuildTagChangesTest {
         oldTmpFile = new File(PATH_PREFIX+"poms/build/pom_base.xml");
 		newTmpFile = new File(PATH_PREFIX+"poms/build/pom_changePluginVersion.xml");
 		expectedChanges=new ArrayList<Change>();
-		expectedChanges.add(new MavenBuildChange("PLUGIN_VERSION_UPDATE","2.6","2.8"));
+		expectedChanges.add(new MavenBuildChange("PLUGIN_MINOR_VERSION_INCREASE","2.6","2.8"));
         o = new Object[]{oldTmpFile,newTmpFile,expectedChanges};
         retVal.add(o);
 
@@ -150,7 +150,7 @@ public class BuildTagChangesTest {
         oldTmpFile = new File(PATH_PREFIX+"poms/build/pom_basePluginDep.xml");
         newTmpFile = new File(PATH_PREFIX+"poms/build/pom_changePluginDepVersion.xml");
         expectedChanges=new ArrayList<Change>();
-        expectedChanges.add(new MavenBuildChange("PLUGIN_DEPENDENCY_VERSION_UPDATE","4.12","4.27"));
+        expectedChanges.add(new MavenBuildChange("PLUGIN_DEPENDENCY_MINOR_VERSION_INCREASE","4.12","4.27"));
         o = new Object[]{oldTmpFile,newTmpFile,expectedChanges};
         retVal.add(o);
 

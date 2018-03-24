@@ -63,7 +63,7 @@ public class WicketEvaluationTest {
         File oldTmpFile = new File(PATH_PREFIX+"wicket/0_0_old[5c4dd98b7eb545b014bb0a24478d14b7104b3086]_pom.xml");
 		File newTmpFile = new File(PATH_PREFIX+"wicket/0_1_new[e3fadc4969870ed5552e1e3f8ff41cd476ce087f]_pom.xml");
 		List<Change> expectedChanges=new ArrayList<Change>();
-		expectedChanges.add(new MavenBuildChange("DEPENDENCY_VERSION_UPDATE","2.3.2.0001","2.3.3.0001"));
+		expectedChanges.add(new MavenBuildChange("DEPENDENCY_PATCH_VERSION_INCREASE","2.3.2.0001","2.3.3.0001"));
 		expectedChanges.add(new MavenBuildChange("DEPENDENCY_DELETE","org.springframework.roo.wrapping/org.springframework.roo.wrapping.velocity/1.6.4.0002",""));
 		expectedChanges.add(new MavenBuildChange("DEPENDENCY_DELETE","commons-lang/commons-lang/2.4",""));
 		expectedChanges.add(new MavenBuildChange("DEPENDENCY_DELETE","commons-collections/commons-collections/3.2.1",""));
@@ -72,7 +72,7 @@ public class WicketEvaluationTest {
 		oldTmpFile = new File(PATH_PREFIX+"wicket/1_0_old[71a78c3aca9b76b09afab1e4acd24f0cc7250b3b]_pom.xml");
 		newTmpFile = new File(PATH_PREFIX+"wicket/1_1_new[0f323a13b2da091da09b0a7a6939495272bbdb10]_pom.xml");
 		expectedChanges=new ArrayList<Change>();
-		expectedChanges.add(new MavenBuildChange("MANAGED_DEPENDENCY_VERSION_UPDATE","1.0.12","1.0.14"));
+		expectedChanges.add(new MavenBuildChange("MANAGED_DEPENDENCY_PATCH_VERSION_INCREASE","1.0.12","1.0.14"));
 		o = new Object[]{oldTmpFile,newTmpFile,expectedChanges};
 		retVal.add(o);
 

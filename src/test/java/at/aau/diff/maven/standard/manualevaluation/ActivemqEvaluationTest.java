@@ -65,7 +65,7 @@ public class ActivemqEvaluationTest {
 		List<Change> expectedChanges=new ArrayList<Change>();
 		expectedChanges.add(new MavenBuildChange("PARENT_UPDATE","org.apache.activemq/activemq/4.0M4","org.apache.activemq/activemq/4.0M4"));
 		expectedChanges.add(new MavenBuildChange("PARENT_GROUPID_UPDATE","activemq","org.apache.activemq"));
-		expectedChanges.add(new MavenBuildChange("PARENT_VERSION_UPDATE","4.0-SNAPSHOT","4.0M4"));
+		expectedChanges.add(new MavenBuildChange("PARENT_POSTFIX_VERSION_UPDATE","4.0-SNAPSHOT","4.0M4"));
 		expectedChanges.add(new MavenBuildChange("DEPENDENCY_INSERT","","junit/junit/3.8.1"));
 		expectedChanges.add(new MavenBuildChange("DEPENDENCY_UPDATE","activemq/activemq-jaas/UKN","org.apache.activemq/activemq-jaas/UKN"));
 		expectedChanges.add(new MavenBuildChange("DEPENDENCY_UPDATE","springframework/spring/UKN", "org.springframework/spring/UKN"));
