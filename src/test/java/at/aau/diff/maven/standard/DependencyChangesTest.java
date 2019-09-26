@@ -20,8 +20,9 @@ import at.aau.diff.maven.MavenBuildFileDiffer;
 
 @RunWith(Parameterized.class)
 public class DependencyChangesTest {
-	private static final String PATH_PREFIX="/Users/chris/Documents/workspaceBuildChangeDifferVariants/semantic-differ/differ-maven-differ/";
-	private File oldTmpFile;
+    //	private static final String PATH_PREFIX="/Users/chris/Documents/workspaceBuildChangeDifferVariants/semantic-differ/differ-maven-differ/";
+    private static final String PATH_PREFIX=new File("").getAbsolutePath()+"/";
+    private File oldTmpFile;
 	private File newTmpFile;
 	private List<Change> expectedChanges;
 	

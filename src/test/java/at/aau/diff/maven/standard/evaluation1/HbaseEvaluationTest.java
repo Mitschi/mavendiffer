@@ -20,7 +20,9 @@ import at.aau.diff.maven.MavenBuildFileDiffer;
 
 @RunWith(Parameterized.class)
 public class HbaseEvaluationTest {
-	private static final String PATH_PREFIX="/Users/chris/Documents/workspaceBuildChangeDifferVariants/semantic-differ/differ-maven-differ/poms/evaluationRun1/";
+//	private static final String PATH_PREFIX="/Users/chris/Documents/workspaceBuildChangeDifferVariants/semantic-differ/differ-maven-differ/poms/evaluationRun1/";
+	private static final String PATH_PREFIX=new File("").getAbsolutePath()+"/poms/evaluationRun1/";
+
 	private File oldTmpFile;
 	private File newTmpFile;
 	private List<Change> expectedChanges;

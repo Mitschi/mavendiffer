@@ -19,7 +19,8 @@ import static org.junit.Assert.assertTrue;
 
 @RunWith(Parameterized.class)
 public class DiffVizTest {
-	private static final String PATH_PREFIX="/Users/chris/Documents/workspaceBuildChangeDifferVariants/semantic-differ/differ-maven-differ/poms/manualevaluation/";
+//	private static final String PATH_PREFIX="/Users/chris/Documents/workspaceBuildChangeDifferVariants/semantic-differ/differ-maven-differ/poms/manualevaluation/";
+	private static final String PATH_PREFIX=new File("").getAbsolutePath()+"/poms/manualevaluation/";
 	private File oldTmpFile;
 	private File newTmpFile;
 	private List<Change> expectedChanges;

@@ -20,7 +20,8 @@ import at.aau.diff.maven.MavenBuildFileDiffer;
 
 @RunWith(Parameterized.class)
 public class VerifyTheseNewTest {
-	private static final String PATH_PREFIX="/Users/chris/Documents/workspaceBuildChangeDifferVariants/semantic-differ/differ-maven-differ/poms/verifyTheseNew/";
+	//	private static final String PATH_PREFIX="/Users/chris/Documents/workspaceBuildChangeDifferVariants/semantic-differ/differ-maven-differ/";
+	private static final String PATH_PREFIX=new File("").getAbsolutePath()+"/poms/verifyTheseNew/";
 	private File oldTmpFile;
 	private File newTmpFile;
 	private List<Change> expectedChanges;

@@ -20,7 +20,8 @@ import at.aau.diff.maven.MavenBuildFileDiffer;
 
 @RunWith(Parameterized.class)
 public class GumTreeUpdateTest {
-	private static final String PATH_PREFIX="/Users/chris/Documents/workspaceBuildChangeDifferVariants/semantic-differ/differ-maven-differ/poms/verifyThese/";
+//	private static final String PATH_PREFIX="/Users/chris/Documents/workspaceBuildChangeDifferVariants/semantic-differ/differ-maven-differ/poms/verifyThese/";
+	private static final String PATH_PREFIX=new File("").getAbsolutePath()+"/poms/verifyThese/";
 	private File oldTmpFile;
 	private File newTmpFile;
 	private List<Change> expectedChanges;

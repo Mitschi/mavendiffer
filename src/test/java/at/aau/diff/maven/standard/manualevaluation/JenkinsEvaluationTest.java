@@ -20,7 +20,8 @@ import at.aau.diff.maven.MavenBuildFileDiffer;
 
 @RunWith(Parameterized.class)
 public class JenkinsEvaluationTest {
-	private static final String PATH_PREFIX="/Users/chris/Documents/workspaceBuildChangeDifferVariants/semantic-differ/differ-maven-differ/poms/manualevaluation/";
+//	private static final String PATH_PREFIX="/Users/chris/Documents/workspaceBuildChangeDifferVariants/semantic-differ/differ-maven-differ/poms/manualevaluation/";
+	private static final String PATH_PREFIX=new File("").getAbsolutePath()+"/poms/manualevaluation/";
 	private File oldTmpFile;
 	private File newTmpFile;
 	private List<Change> expectedChanges;
